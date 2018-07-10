@@ -26,7 +26,6 @@ temp <- lapply(seq(files), function(i){
 x <- list.files(pathhyde)
 poppath <- paste0(pathhyde, x, "/")
 #Time intervals are 10 yr till 2000, and from 2000 - 2015 1 year timesteps.
-#????? mean values or values for 1970 and then again 1980????
 popc <- lapply(seq(poppath), function(i){
   pf <- list.files(poppath[i], pattern="popc", full.names=T)
   stack(pf)
@@ -79,4 +78,3 @@ tempstack <- crop(tempstack, newex)
 #write stacks
 saveRDS(tempstack, file=paste0(main, "reprojected/temp.rds"))
 saveRDS(popstack, file=paste0(main, "reprojected/pop.rds"))
-
