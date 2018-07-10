@@ -7,7 +7,6 @@ library(mapview)
 main <- "E:/populationclimate/"
 datapath <- paste0(main, "reprojected/")
 pop <- readRDS(file=paste0(datapath, "pop.rds"))
-temp <- readRDS(file=paste0(datapath, "temp.rds"))
 
 ##### linear interpolation of population data 1970-2015 #######################
 
