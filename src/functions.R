@@ -16,7 +16,3 @@ mymerge <- function(shape, zonal,i, grid){ #function for merging
   print(i)
   return(m1)
 }
-
-geomSeries <- function(base, max) {
-  base^(0:floor(log(max, base)))
-}
